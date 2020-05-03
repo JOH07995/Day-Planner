@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day Planner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d3bce829f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <div class="container mt-5 mb-5">
+        <h1 class="display-3 text-center">Day Planner 12AM - 12PM</h1>
+        <h4>What's on the schedule for the day?</h4>
+        <h4 class="text-center text-muted" id="todaysDate"></h4>
+    </div>
+
+
+    <div class="container mt-5 pt-5 mb-5 border">
+
+        <!-- Begin Inputs for each hour of the day, reapeat for 24 Divs... -->
+        <div class="input-group mb-3">
+            <label data-hour="0" class="input-group-text">12:00 AM</label>
+            <input id="hour0" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="1" class="input-group-text">01:00 AM</label>
+            <input id="hour1" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="2" class="input-group-text">02:00 AM</label>
+            <input id="hour2" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <label data-hour="3" class="input-group-text">03:00 AM</label>
+            <input id="hour3" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <label data-hour="4" class="input-group-text">04:00 AM</label>
+            <input id="hour4" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="5" class="input-group-text">05:00 AM</label>
+            <input id="hour5" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="6" class="input-group-text">06:00 AM</label>
+            <input id="hour6" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="7" class="input-group-text">07:00 AM</label>
+            <input id="hour7" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="8" class="input-group-text">08:00 AM</label>
+            <input id="hour8" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="9" class="input-group-text">09:00 AM</label>
+            <input id="hour9" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="10" class="input-group-text">10:00 AM</label>
+            <input id="hour10" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="11" class="input-group-text">11:00 AM</label>
+            <input id="hour11" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="12" class="input-group-text">12:00 PM</label>
+            <input id="hour12" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="13" class="input-group-text">01:00 PM</label>
+            <input id="hour13" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="14" class="input-group-text">02:00 PM</label>
+            <input id="hour14" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="15" class="input-group-text">03:00 PM</label>
+            <input id="hour15" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="16" class="input-group-text">04:00 PM</label>
+            <input id="hour16" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="17" class="input-group-text">05:00 PM</label>
+            <input id="hour17" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="18" class="input-group-text">06:00 PM</label>
+            <input id="hour18" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="19" class="input-group-text">07:00 PM</label>
+            <input id="hour19" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="20" class="input-group-text">08:00 PM</label>
+            <input id="hour20" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="21" class="input-group-text">09:00 PM</label>
+            <input id="hour21" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="22" class="input-group-text">10:00 PM</label>
+            <input id="hour22" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <label data-hour="23" class="input-group-text">11:00 PM</label>
+            <input id="hour23" type="text" class="form-control" placeholder="I need to..." aria-label="I need to..."
+                aria-describedby="button-addon2">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary saveBtn" type="button" id="button-addon2">
+                    <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </div>
+
+    </div>
+    <!-- end input div -->
+
+    </div>
+    <!-- End main container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<script type="text/javascript" src="code.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
