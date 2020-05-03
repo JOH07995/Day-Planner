@@ -3,7 +3,7 @@ a simple calendar application that allows the user to save events for each hour 
 
 
 
-Key considerations in this refactoring effort are:
+Key considerations in this effort and unit are:
 * Using BootStrap for the look and feel
 * jQuery
 * DOM traversal and manipulation
